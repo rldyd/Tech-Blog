@@ -5,4 +5,5 @@
 
 # Credits
 
-* Jorge Martinez: Always doing homework together. (https://github.com/JAMart01/MVC-Paradigm-Tech-Blog)
+* Jorge Martinez (classmate): Always doing homework together. 
+                              (https://github.com/JAMart01/MVC-Paradigm-Tech-Blog)
