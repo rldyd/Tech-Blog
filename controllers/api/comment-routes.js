@@ -1,15 +1,9 @@
 const router = require('express').Router();
-const { Comment, User } = require('../../models');
-const withAuth = require('..//../utils/auth');
+const { Comment } = require('../../models');
+const withAuth = require('../../utils/auth');
 
-// Find All
 router.get('/', (req, res) => {
-    Comment.findAll({
-        include: {
-            model: User,
-            attributes: ['id', 'username']
-        }
-    })
+    Comment.findAll()
         .then(dbCommentData => res.json(dbCommentData))
         .catch(err => {
             console.log(err);
@@ -17,32 +11,8 @@ router.get('/', (req, res) => {
         });
 });
 
-// Find One
-router.get('/:id', (req, res) => {
-    Comment.findOne({
-        where: {
-            id: req.params.id
-        },
-        include: {
-            model: User,
-            attributes: ['id', 'username']
-        }
-    })
-        .then(dbCommentData => {
-            if (!dbCommentData) {
-                res.status(404).json({ message: "No comment found " });
-                return;
-            }
-            res.json(dbCommentData);
-        })
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
-        });
-});
-
-// Create new Comment
 router.post('/', withAuth, (req, res) => {
+    // expects => {comment_text: "This is the comment", user_id: 1, post_id: 2}
     Comment.create({
         comment_text: req.body.comment_text,
         user_id: req.session.user_id,
@@ -55,7 +25,6 @@ router.post('/', withAuth, (req, res) => {
         });
 });
 
-// Delete Comment
 router.delete('/:id', withAuth, (req, res) => {
     Comment.destroy({
         where: {
@@ -64,7 +33,7 @@ router.delete('/:id', withAuth, (req, res) => {
     })
         .then(dbCommentData => {
             if (!dbCommentData) {
-                res.status(404).json({ messgae: "No comment found " });
+                res.status(404).json({ message: 'No comment found with this id!' });
                 return;
             }
             res.json(dbCommentData);
@@ -74,6 +43,5 @@ router.delete('/:id', withAuth, (req, res) => {
             res.status(500).json(err);
         });
 });
-
 
 module.exports = router;
