@@ -2,46 +2,31 @@ const { Post } = require("../models");
 
 const postData = [
     {
-        title: "Donec posuere metus vitae ipsum.",
-        post_url: "https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png",
+        title: "Android Central",
+        post_url: "https://www.androidcentral.com/",
         user_id: 10,
     },
     {
-        title: "Morbi non quam nec dui luctus rutrum.",
-        post_url: "https://nasa.gov/donec.json",
+        title: "SiliconANGLE",
+        post_url: "https://siliconangle.com/",
         user_id: 8,
     },
     {
         title:
-            "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.",
+            "BGR",
         post_url:
-            "https://europa.eu/parturient/montes/nascetur/ridiculus/mus/etiam/vel.aspx",
+            "http://bgr.com",
         user_id: 1,
     },
     {
-        title: "Nunc purus.",
-        post_url: "http://desdev.cn/enim/blandit/mi.jpg",
+        title: "ReadWrite",
+        post_url: "https://readwrite.com/",
         user_id: 4,
     },
     {
-        title: "Pellentesque eget nunc.",
-        post_url: "http://google.ca/nam/nulla/integer.aspx",
+        title: "Macworld",
+        post_url: "hhttps://www.macworld.com",
         user_id: 7,
-    },
-    {
-        title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-        post_url: "https://stanford.edu/consequat.png",
-        user_id: 4,
-    },
-    {
-        title: "In hac habitasse platea dictumst.",
-        post_url: "http://edublogs.org/non/ligula/pellentesque.js",
-        user_id: 1,
-    },
-    {
-        title: "Morbi non quam nec dui luctus rutrum.",
-        post_url: "http://ucla.edu/consequat/nulla.html",
-        user_id: 1,
     },
 ];
 

@@ -8,13 +8,13 @@ html {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: #2422a3;
-  background-color: rgb(240, 237, 253);
+  color: #000000;
+  background-color: rgb(164, 185, 160);
 }
 
 a {
   text-decoration: none;
-  color: #2422a3;
+  color: #3168ff;
   font-weight: bold;
   transition: color 0.1s;
 }
@@ -24,10 +24,10 @@ a:hover {
 }
 
 button {
-  background-color: #00d4b8;
+  background-color: rgb(157, 187, 151);
   border: 0;
   padding: 1%;
-  color: white;
+  color: rgb(27, 27, 27);
   font-weight: bold;
   transition: background-color 0.1s;
   cursor: pointer;
@@ -35,25 +35,26 @@ button {
 }
 
 button:hover {
-  background-color: #52faf1;
+  background-color: #28c1e7;
 }
 
 .post-list {
   margin: 0;
   padding: 0;
+  color: rgb(2, 2, 2);
 }
 
 textarea,
 input {
   padding: 0.5%;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(5, 5, 5);
 }
 
 textarea:focus,
 input:focus {
   outline: none;
-  border: 1px solid #3486eb;
+  border: 1px solid #3d62c9;
 }
 
 textarea {
@@ -79,15 +80,16 @@ form label {
 }
 
 header {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid rgb(3, 3, 3);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
+  background-color: rgb(46, 42, 42);
 }
 
 header h1 {
-  font-size: 1em;
+  font-size: 2em;
 }
 
 main {
@@ -96,8 +98,6 @@ main {
 }
 
 .btn-no-style {
-  background: none;
-  border: none;
   padding: 0;
   cursor: pointer;
   text-decoration: none;
@@ -118,7 +118,7 @@ main {
 }
 
 .delete-post-btn:hover {
-  background-color: #fa00d9;
+  background-color: #f5504b;
 }
 
 .post {
@@ -165,7 +165,7 @@ main {
 }
 
 footer {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid rgb(2, 2, 2);
   display: flex;
   justify-content: center;
   padding: 1%;
