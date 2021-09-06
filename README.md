@@ -10,3 +10,4 @@
 
 * Jorge Martinez (classmate): Always doing homework together. 
 * Jorge's github: https://github.com/JAMart01/MVC-Paradigm-Tech-Blog
+* Most of coding guidline from Module 14 (Just-tech-news)
